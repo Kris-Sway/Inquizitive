@@ -139,7 +139,7 @@ Deploy the app (Due: Day 5)
 
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
-<img width="567" alt="Screenshot 2025-03-17 at 7 30 34 PM" src="https://github.com/user-attachments/assets/8feb614c-7d01-4345-8cbb-fdb0c8762415" />
-
-<img width="558" alt="Screenshot 2025-03-17 at 7 30 24 PM" src="https://github.com/user-attachments/assets/62d4092d-a599-419a-94d8-d044f52a5a40" />
+<img width="1440" alt="Screenshot 2025-03-24 at 11 19 42 AM" src="https://github.com/user-attachments/assets/84c904b5-5ae5-4335-b7e8-f7063cc59432" />
+<img width="1440" alt="Screenshot 2025-03-24 at 11 19 35 AM" src="https://github.com/user-attachments/assets/14a5d06c-258b-430a-9fab-5cf5e530f024" />
+<img width="1440" alt="Screenshot 2025-03-24 at 11 19 26 AM" src="https://github.com/user-attachments/assets/4760a608-eb8d-44d0-b35b-797c30360d13" />
 
