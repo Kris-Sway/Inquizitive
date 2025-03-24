@@ -13,30 +13,16 @@
 //   }
 // };
 
-import { handleFetch } from "./api"; // Ensure this is the correct import
+import { fetchQuestions } from "./api";
 
-const API_URL =
-  "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple";
-
-export const renderFetch = async (retries = 3, delay = 5000) => {
-  for (let attempt = 0; attempt < retries; attempt++) {
-    const [data, error] = await handleFetch(API_URL);
-
-    if (error) {
-      if (error.message.includes("429")) {
-        console.warn(`Rate limited! Retrying in ${delay / 1000} seconds...`);
-        await new Promise((res) => setTimeout(res, delay));
-        continue; // Try again after waiting
-      }
-      console.error("API fetch failed:", error);
-      return []; // Return empty array to prevent crashes
-    }
-
-    return data.results; // Successfully fetched questions
+// Function to fetch and return questions
+const renderFetch = async () => {
+  const [questions, error] = await fetchQuestions();
+  if (error) {
+    console.error("Error fetching questions:", error);
+    return [];
   }
-
-  console.error("Failed after multiple attempts.");
-  return []; // Return empty array if all attempts fail
+  return questions;
 };
 
 export default renderFetch;

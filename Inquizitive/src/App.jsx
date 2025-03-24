@@ -10,11 +10,12 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetching questions when the component mounts
     const fetchQuestions = async () => {
+      if (questions.length > 0) return; // Prevent multiple fetch calls
+  
       setLoading(true);
       try {
-        const fetchedQuestions = await renderFetch(); // Using renderFetch to get data
+        const fetchedQuestions = await renderFetch();
         setQuestions(fetchedQuestions);
       } catch (error) {
         console.error("Error fetching trivia questions:", error);
@@ -22,9 +23,10 @@ const App = () => {
         setLoading(false);
       }
     };
-
+  
     fetchQuestions();
-  }, []);
+  }, []); // Empty dependency array ensures this runs only once
+  
 
   const handleAnswerClick = (selectedAnswer, correctAnswer) => {
     if (selectedAnswer === correctAnswer) {
