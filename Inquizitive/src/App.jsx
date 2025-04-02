@@ -82,7 +82,7 @@ const App = () => {
                     )
                   }
                 >
-                  {answer}
+                  {decodeHTML(answer)}
                 </button>
               ))}
           </div>
