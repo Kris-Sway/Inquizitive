@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+itimport { useState, useEffect } from "react";
 import { fetchTriviaQuestions } from "../services/api";  // Import API function
 import Question from "./components/Question";  // Import Question component
 import Score from "./components/Score";        // Import Score component

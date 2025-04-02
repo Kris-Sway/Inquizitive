@@ -18,6 +18,7 @@ import { fetchQuestions } from "./api";
 // Function to fetch and return questions
 const renderFetch = async () => {
   const [questions, error] = await fetchQuestions();
+  console.log(questions);
   if (error) {
     console.error("Error fetching questions:", error);
     return [];
