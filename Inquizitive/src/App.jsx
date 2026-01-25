@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <div className="quiz-container">
-      <h1>Trivia Challenge</h1>
+      <h1>Inquizitive</h1>
       {loading ? (
         <h2>Loading Questions...</h2>
       ) : gameOver ? (
